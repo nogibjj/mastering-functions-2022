@@ -11,4 +11,4 @@ lint:
 format:
 	black *.py nlplogic
 
-all: install lint test
+all: install lint test format
