@@ -3,7 +3,7 @@ install:
 		pip install -r requirements.txt
 	python -m textblob.download_corpora
 test:
-	python -m pytest -vv --cov=wikiphrases --cov=nlplogic test_corenlp.py
+	python -m pytest -vv --cov=wikiphrases --cov=nlplogic --cov=main test_corenlp.py
 
 lint:
 	pylint --disable=R,C *.py nlplogic/*.py
